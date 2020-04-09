@@ -3,7 +3,7 @@ package network.piction.example.entities
 import javax.persistence.*
 
 @MappedSuperclass
-class UserEntity : ParentEntity() {
+open class UserEntity : ParentEntity() {
 
     enum class STATUS { ACTIVE, DELETE, DEPRECATED }
 

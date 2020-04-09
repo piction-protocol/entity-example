@@ -3,7 +3,7 @@ package network.piction.example.entities
 import javax.persistence.*
 
 @MappedSuperclass
-class WalletEntity : ParentEntity() {
+open class WalletEntity : ParentEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
