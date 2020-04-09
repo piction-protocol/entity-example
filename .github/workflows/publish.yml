@@ -17,10 +17,10 @@ jobs:
           java-version: 1.8
 
       - name: Build with Gradle
-        run: gradle build
+        run: ./gradlew build
 
       - name: Publish to GitHub Packages
-        run: gradle publish
+        run: ./gradlew publish
         env:
           PUBLISH_USERNAME: ${{ secrets.PUBLISH_USERNAME }}
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
