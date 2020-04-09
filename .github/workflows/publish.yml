@@ -1,8 +1,9 @@
 name: Piction Entity Example Gradle Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
